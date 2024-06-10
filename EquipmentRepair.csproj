@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddReqForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddReqForm.Designer.cs">
+      <DependentUpon>AddReqForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChabgeReyest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChabgeReyest.Designer.cs">
+      <DependentUpon>ChabgeReyest.cs</DependentUpon>
+    </Compile>
     <Compile Include="EquipmentRepairDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -65,6 +77,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddReqForm.resx">
+      <DependentUpon>AddReqForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChabgeReyest.resx">
+      <DependentUpon>ChabgeReyest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

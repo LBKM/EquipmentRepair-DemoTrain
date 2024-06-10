@@ -30,20 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.equipmentRepairDataSet = new EquipmentRepair.EquipmentRepairDataSet();
-            this.assignmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.assignmentsTableAdapter = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.AssignmentsTableAdapter();
-            this.tableAdapterManager = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.TableAdapterManager();
-            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientsTableAdapter = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.ClientsTableAdapter();
-            this.equipmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.equipmentTableAdapter = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.EquipmentTableAdapter();
-            this.executorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.executorsTableAdapter = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.ExecutorsTableAdapter();
-            this.requestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.requestsTableAdapter = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.RequestsTableAdapter();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usersTableAdapter = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.UsersTableAdapter();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -56,6 +42,23 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.equipmentRepairDataSet = new EquipmentRepair.EquipmentRepairDataSet();
+            this.assignmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.assignmentsTableAdapter = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.AssignmentsTableAdapter();
+            this.tableAdapterManager = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.TableAdapterManager();
+            this.clientsTableAdapter = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.ClientsTableAdapter();
+            this.equipmentTableAdapter = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.EquipmentTableAdapter();
+            this.executorsTableAdapter = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.ExecutorsTableAdapter();
+            this.requestsTableAdapter = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.RequestsTableAdapter();
+            this.usersTableAdapter = new EquipmentRepair.EquipmentRepairDataSetTableAdapters.UsersTableAdapter();
+            this.clientsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.equipmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.executorsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.requestsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.equipmentRepairDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.assignmentsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clientsBindingSource)).BeginInit();
@@ -86,76 +89,7 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // equipmentRepairDataSet
-            // 
-            this.equipmentRepairDataSet.DataSetName = "EquipmentRepairDataSet";
-            this.equipmentRepairDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // assignmentsBindingSource
-            // 
-            this.assignmentsBindingSource.DataMember = "Assignments";
-            this.assignmentsBindingSource.DataSource = this.equipmentRepairDataSet;
-            // 
-            // assignmentsTableAdapter
-            // 
-            this.assignmentsTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.AssignmentsTableAdapter = this.assignmentsTableAdapter;
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.ClientsTableAdapter = this.clientsTableAdapter;
-            this.tableAdapterManager.EquipmentTableAdapter = this.equipmentTableAdapter;
-            this.tableAdapterManager.ExecutorsTableAdapter = this.executorsTableAdapter;
-            this.tableAdapterManager.RequestsTableAdapter = this.requestsTableAdapter;
-            this.tableAdapterManager.UpdateOrder = EquipmentRepair.EquipmentRepairDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager.UsersTableAdapter = this.usersTableAdapter;
-            // 
-            // clientsBindingSource
-            // 
-            this.clientsBindingSource.DataMember = "Clients";
-            this.clientsBindingSource.DataSource = this.equipmentRepairDataSet;
-            // 
-            // clientsTableAdapter
-            // 
-            this.clientsTableAdapter.ClearBeforeFill = true;
-            // 
-            // equipmentBindingSource
-            // 
-            this.equipmentBindingSource.DataMember = "Equipment";
-            this.equipmentBindingSource.DataSource = this.equipmentRepairDataSet;
-            // 
-            // equipmentTableAdapter
-            // 
-            this.equipmentTableAdapter.ClearBeforeFill = true;
-            // 
-            // executorsBindingSource
-            // 
-            this.executorsBindingSource.DataMember = "Executors";
-            this.executorsBindingSource.DataSource = this.equipmentRepairDataSet;
-            // 
-            // executorsTableAdapter
-            // 
-            this.executorsTableAdapter.ClearBeforeFill = true;
-            // 
-            // requestsBindingSource
-            // 
-            this.requestsBindingSource.DataMember = "Requests";
-            this.requestsBindingSource.DataSource = this.equipmentRepairDataSet;
-            // 
-            // requestsTableAdapter
-            // 
-            this.requestsTableAdapter.ClearBeforeFill = true;
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataMember = "Users";
-            this.usersBindingSource.DataSource = this.equipmentRepairDataSet;
-            // 
-            // usersTableAdapter
-            // 
-            this.usersTableAdapter.ClearBeforeFill = true;
+            this.listView1.DoubleClick += new System.EventHandler(this.listView1_DoubleClick);
             // 
             // columnHeader6
             // 
@@ -204,10 +138,11 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(235, 21);
             this.comboBox1.TabIndex = 4;
+            this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(198, 119);
+            this.button1.Location = new System.Drawing.Point(12, 223);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(175, 23);
             this.button1.TabIndex = 5;
@@ -215,11 +150,113 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(41, 93);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Добавить";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(41, 123);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Удалить";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(355, 223);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(219, 13);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Для изменения данных, х2 лкм в таблицу";
+            // 
+            // equipmentRepairDataSet
+            // 
+            this.equipmentRepairDataSet.DataSetName = "EquipmentRepairDataSet";
+            this.equipmentRepairDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // assignmentsBindingSource
+            // 
+            this.assignmentsBindingSource.DataMember = "Assignments";
+            this.assignmentsBindingSource.DataSource = this.equipmentRepairDataSet;
+            // 
+            // assignmentsTableAdapter
+            // 
+            this.assignmentsTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.AssignmentsTableAdapter = this.assignmentsTableAdapter;
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.ClientsTableAdapter = this.clientsTableAdapter;
+            this.tableAdapterManager.EquipmentTableAdapter = this.equipmentTableAdapter;
+            this.tableAdapterManager.ExecutorsTableAdapter = this.executorsTableAdapter;
+            this.tableAdapterManager.RequestsTableAdapter = this.requestsTableAdapter;
+            this.tableAdapterManager.UpdateOrder = EquipmentRepair.EquipmentRepairDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UsersTableAdapter = this.usersTableAdapter;
+            // 
+            // clientsTableAdapter
+            // 
+            this.clientsTableAdapter.ClearBeforeFill = true;
+            // 
+            // equipmentTableAdapter
+            // 
+            this.equipmentTableAdapter.ClearBeforeFill = true;
+            // 
+            // executorsTableAdapter
+            // 
+            this.executorsTableAdapter.ClearBeforeFill = true;
+            // 
+            // requestsTableAdapter
+            // 
+            this.requestsTableAdapter.ClearBeforeFill = true;
+            // 
+            // usersTableAdapter
+            // 
+            this.usersTableAdapter.ClearBeforeFill = true;
+            // 
+            // clientsBindingSource
+            // 
+            this.clientsBindingSource.DataMember = "Clients";
+            this.clientsBindingSource.DataSource = this.equipmentRepairDataSet;
+            // 
+            // equipmentBindingSource
+            // 
+            this.equipmentBindingSource.DataMember = "Equipment";
+            this.equipmentBindingSource.DataSource = this.equipmentRepairDataSet;
+            // 
+            // executorsBindingSource
+            // 
+            this.executorsBindingSource.DataMember = "Executors";
+            this.executorsBindingSource.DataSource = this.equipmentRepairDataSet;
+            // 
+            // requestsBindingSource
+            // 
+            this.requestsBindingSource.DataMember = "Requests";
+            this.requestsBindingSource.DataSource = this.equipmentRepairDataSet;
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataMember = "Users";
+            this.usersBindingSource.DataSource = this.equipmentRepairDataSet;
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1032, 563);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
@@ -270,5 +307,8 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label1;
     }
 }
